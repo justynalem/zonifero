@@ -1,0 +1,59 @@
+// colors
+$product-color: #3146FF;
+$text-color: #000000;
+$background-color: #F7F7F7;
+$secondary-color: #01FFCB;
+
+//typography
+$bigHeadline-fontSize: 70px;
+$bigHeadline-lineHeight: 80px;
+$bigHeadline-fontFamily: "Poppins";
+$bigHeadline-fontWeight: bold;
+
+$description-fontSize: 30px;
+$description-lineHeight: 40px;
+$description-fontFamily: "Roboto";
+$description-fontWeight: 400;
+
+$h2-fontSize: 30px;
+$h2-lineHeight: 40px;
+$h2-fontFamily: "Poppins";
+$h2-fontWeight: bold;
+
+$h3-fontSize: 19px;
+$h3-lineHeight: 26px;
+$h3-fontFamily: "Poppins";
+$h3-fontWeight: bold;
+
+$h4-fontSize: 17px;
+$h4-fontFamily: "Roboto";
+$h4-fontWeight: 300;
+
+$p-fontSize: 17px;
+$p-lineHeight: 25px;
+$p-fontFamily: "Roboto";
+$p-fontWeight: 100;
+
+$list_fontSize: 19px;
+$list-lineHeight: 26px;
+$list-fontFamily: "Poppins";
+$list-fontWeight: bold;
+$listActive-color: $product-color;
+$list-color: $text-color;
+
+$button-fontSize: 17px;
+$button-fontFamily: "Roboto";
+$button-fontWeight: regular;
+
+$tab-fontSize: 17px;
+$tab-fontFamily: "Roboto";
+$tab-fontWeight: bold;
+$tabActive-fontWeight: regular;
+
+$inputSmall-fontSize: 13px;
+$inputSmall-fontFamily: "Roboto";
+$inputSmall-fontWeight: light;
+
+$input-fontSize: 30px;
+$input-fontFamily: "Roboto";
+$input-fontWeight: 400;

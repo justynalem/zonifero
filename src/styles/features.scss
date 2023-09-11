@@ -1,0 +1,273 @@
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+
+  @include md-breakpoint {
+    margin: 0;
+    // padding-left: 16px;
+  }
+
+
+  &--blue {
+    background-color: $product-color;
+  }
+
+  &__container {
+    display: flex;
+    // flex-direction: column;
+    margin-left: 300px;
+    width: calc(100% - 300px);
+
+    @include md-breakpoint {
+      margin: 0;
+      width: 100%;
+    }
+
+    &--fullWidth {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    margin-right: 25px;
+    background-color: #fff;
+
+    @include md-breakpoint {
+      margin: 8px;
+    }
+  }
+
+  &__mobImg {
+    width: 100%;
+  }
+
+  &__slideInnerContainer {
+    width: 100%;
+  }
+
+  &__partialWideColumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 90px 0;
+  }
+
+
+  &__slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include md-breakpoint {
+      overflow: hidden;
+    }
+
+  }
+
+  &__imageContainer {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: $product-color;
+    position: relative;
+  }
+
+  &__mainImg {
+    width: 100%;
+    position: relative;
+
+    @include md-breakpoint {
+      width: unset;
+    }
+  }
+
+  &__phoneImg {
+    position: absolute;
+    top: 2%;
+    right: 15%;
+    z-index: 10;
+
+    @include md-breakpoint {
+      width: 375px;
+      top: 50px;
+      left: calc(50% - 24px);
+      transform: translateX(-50%);
+    }
+
+  }
+
+  &__slidesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $product-color;
+
+    @include md-breakpoint {
+      padding: 0 16px;
+    }
+  }
+
+  &__slideTop {
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+
+    @include md-breakpoint {
+      flex-direction: column;
+    }
+  }
+
+  &__slideHeadline {
+    width: 50%;
+
+    @include md-breakpoint {
+      width: 100%;
+    }
+  }
+
+  &__slideContent {
+    width: 50%;
+
+    @include md-breakpoint {
+      width: 100%;
+    }
+  }
+
+  &__slideFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__headlineWrapper {
+    margin-left: 300px;
+    width: 50%;
+
+    @include md-breakpoint {
+      margin: 0;
+      width: 100%;
+      // margin-top: 64px;
+    }
+
+    &--withMargin {
+      margin-top: 120px;
+
+      @include md-breakpoint {
+        margin: 0;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    border-top: 1px dashed $background-color;
+    width: 20%;
+    text-align: center;
+    color: #fff;
+
+    @include md-breakpoint {
+      width: 100%;
+    }
+  }
+
+  &__slideBtn {
+    height: 60px;
+    background-color: #fff;
+    opacity: 1;
+    border: none;
+    margin: 0;
+    position: absolute;
+    top: -30px;
+    z-index: 500;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+
+
+  }
+
+  &__informations {
+    width: 70%;
+    margin: 0 15%;
+    display: grid;
+    grid-template-columns: 4fr 4fr 3fr;
+
+    @include md-breakpoint {
+      margin: 0;
+      width: 100%;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+  }
+
+  &__accordionContainer {
+    width: 70%;
+    margin: 0 15%;
+    display: flex;
+    flex-direction: column;
+
+    @include md-breakpoint {
+      margin: 0;
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
+
+  &__smallTitle {
+    font-size: $h3-fontSize;
+    font-family: $h3-fontFamily;
+    font-weight: $h3-fontWeight;
+  }
+
+  &__dots {
+    display: none;
+
+    @include md-breakpoint {
+      display: flex
+    }
+  }
+
+  &__infoImg {
+    @include md-breakpoint {
+      height: calc(100vw - 30px);
+      position: relative;
+    }
+  }
+
+  &__mobImg {
+    @include md-breakpoint {
+      position: absolute;
+      left: -90px;
+      bottom: 0;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+
+    @include md-breakpoint {
+      position: absolute;
+      top: 50%;
+      right: 50px;
+
+    }
+  }
+
+
+}

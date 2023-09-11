@@ -1,0 +1,50 @@
+.faq {
+  width: 100%;
+
+  @include md-breakpoint {
+    margin-top: 64px;
+  }
+
+  &__container {
+    display: flex;
+    margin: 200px 15%;
+    width: 70%;
+    align-items: flex-start;
+
+    @include md-breakpoint {
+      margin: 0;
+      width: 100%;
+      flex-direction: column;
+      padding: 0 16px;
+    }
+  }
+
+  &__headline {
+    width: 25%;
+
+    @include md-breakpoint {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  &__questionSection {
+    width: 70%;
+    display: flex;
+
+    @include md-breakpoint {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__questionColumn {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    @include md-breakpoint {
+      width: 100%;
+    }
+  }
+}
