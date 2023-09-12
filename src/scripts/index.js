@@ -45,7 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
       prev: ".glider-prev",
       next: ".glider-next",
     },
+    draggable: true,
   });
+
 
   const accordions = document.getElementsByClassName("accordion");
 
