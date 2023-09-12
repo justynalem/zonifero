@@ -129,4 +129,27 @@
     background-color: transparent;
     cursor: pointer;
   }
+
+  &__dropdown {
+    width: 100%;
+    height: auto;
+  }
+
+  &__dropdownBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+  }
+
+  &__innerDropdownBtn {
+    padding: 0 18px;
+    background-color: unset;
+
+  }
+
+  &__dropdownContent {
+    left: 300px;
+    background-color: #fff;
+  }
 }
