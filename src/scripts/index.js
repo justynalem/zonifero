@@ -79,3 +79,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+
+function scrollToTargetWithOffset(targetElement, offset) {
+  const target = document.querySelector(targetElement);
+  if (target) {
+    window.scrollTo({
+      top: target.offsetTop - offset,
+      behavior: 'smooth',
+    });
+  }
+}
+
+const headerHeight = 150;
+
+document.querySelectorAll('.header__link a').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href');
+    scrollToTargetWithOffset(targetId, headerHeight);
+  });
+});
+
+
