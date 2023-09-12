@@ -52,6 +52,12 @@
     align-items: center;
     padding: 0 300px;
 
+    & a:focus {
+
+      border-bottom: 3px solid $secondary-color;
+      border-image: linear-gradient(to right, $secondary-color 50%, transparent 50%) 100% 1
+    }
+
 
     @include md-breakpoint {
       width: 100%;
@@ -79,8 +85,6 @@
     color: $text-color;
     text-decoration: none;
 
-
-
     &--center {
       @include md-breakpoint {
         justify-self: center;
@@ -96,12 +100,9 @@
     & a {
       text-decoration: none;
       color: $text-color;
-
-      &:active {
-        color: $text-color;
-      }
     }
   }
+
 
   &__link:first-child {
     padding: 0 0;
@@ -158,4 +159,12 @@
     left: 300px;
     background-color: #fff;
   }
+
+  // &__navLink {
+  //   &:focus {
+  //     background-color: red;
+  //   }
+
 }
+
+// }
