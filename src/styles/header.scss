@@ -1,0 +1,170 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  padding-top: 20px;
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  z-index: 999;
+
+  @include md-breakpoint {
+    height: 64px;
+    padding: 0 8px;
+  }
+
+  &__topContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+
+    @include md-breakpoint {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 50%;
+    padding-left: 80px;
+
+    & img {
+      width: 15%;
+      scale: 90%;
+    }
+  }
+
+  &__mobileLogo {
+    width: 48px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__linksBottom {
+    display: flex;
+    align-items: center;
+    padding: 0 300px;
+
+    & a:focus {
+
+      border-bottom: 3px solid $secondary-color;
+      border-image: linear-gradient(to right, $secondary-color 50%, transparent 50%) 100% 1
+    }
+
+
+    @include md-breakpoint {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__linksContainer {
+    display: flex;
+    list-style-type: none;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding: 0;
+
+    @include md-breakpoint {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    padding: 0 16px;
+    color: $text-color;
+    text-decoration: none;
+
+    &--center {
+      @include md-breakpoint {
+        justify-self: center;
+      }
+    }
+
+    &--end {
+      @include md-breakpoint {
+        justify-self: flex-end;
+      }
+    }
+
+    & a {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+
+
+  &__link:first-child {
+    padding: 0 0;
+  }
+
+  &__link:last-child {
+    padding-right: 0;
+  }
+
+  &__accessLinks {
+    background-color: $product-color;
+    padding: 30px 150px 1px 40px;
+  }
+
+  &__accessLinks:last-child a {
+    color: #fff
+  }
+
+  &__p {
+    white-space: nowrap;
+  }
+
+  &__h4 {
+    font-family: "Poppins";
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  &__accordion {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__dropdown {
+    width: 100%;
+    height: auto;
+  }
+
+  &__dropdownBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+  }
+
+  &__innerDropdownBtn {
+    padding: 0 18px;
+    background-color: unset;
+
+  }
+
+  &__dropdownContent {
+    left: 300px;
+    background-color: #fff;
+  }
+
+  // &__navLink {
+  //   &:focus {
+  //     background-color: red;
+  //   }
+
+}
+
+// }

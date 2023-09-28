@@ -1,0 +1,210 @@
+.hero {
+  background-color: $background-color;
+  width: 100%;
+  margin-top: 150px;
+
+  @include md-breakpoint {
+    margin-top: 64px;
+  }
+
+  &__container {
+    display: flex;
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    flex-wrap: wrap;
+
+    @include md-breakpoint {
+      margin: 0;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 75px 0 40px;
+
+    @include md-breakpoint {
+      margin: 0;
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
+
+  &__title {
+    @include md-breakpoint {
+      order: 0;
+      background-color: $background-color;
+    }
+  }
+
+  &__text {
+    padding-right: 150px;
+
+    @include md-breakpoint {
+      order: 2;
+      padding: 0;
+      margin-top: 16px;
+      background-color: #fff;
+      z-index: 100;
+    }
+  }
+
+  &__storeLinks {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+
+    @include md-breakpoint {
+      order: 3;
+      justify-content: center;
+      display: flex;
+    }
+  }
+
+  &__badgeWrapper {
+    background-color: $text-color;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+
+    @include md-breakpoint {
+      width: 40%;
+      height: 45px;
+    }
+  }
+
+  &__storeLink {
+    display: inline-block;
+    width: 150px;
+
+    @include md-breakpoint {
+      width: 45%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__storeImg {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__appleBadge {
+    width: 80%;
+    transform: translateY(-8.5px);
+    margin: 19px auto;
+  }
+
+
+  &__img {
+    padding: 20px;
+    width: 50%;
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+
+    @include md-breakpoint {
+      display: none;
+    }
+  }
+
+  &__imgMob {
+    display: none;
+
+    @include md-breakpoint {
+      display: block;
+      margin: 0;
+      width: 100%;
+      order: 1;
+      height: calc(100vw - 90px);
+      position: relative;
+      $background-color: $background-color
+    }
+  }
+
+  &__deskImg {
+    height: auto;
+    position: relative;
+    right: 40px;
+    top: 80px;
+
+    @include md-breakpoint {
+      width: 100%;
+      height: auto;
+      top: 0;
+      position: absolute;
+      top: 110px;
+
+    }
+  }
+
+  &__handImg {
+    position: absolute;
+    top: 0px;
+    left: 35px;
+    overflow-y: hidden;
+    z-index: 100;
+    scale: 0.9;
+
+    @include md-breakpoint {
+      width: 75%;
+      height: auto;
+      top: 60px;
+    }
+
+  }
+
+  &__bottomContainer {
+    display: flex;
+    gap: 120px;
+    width: 100%;
+
+    @include md-breakpoint {
+      margin: 0;
+      width: 100%;
+      flex-direction: column;
+      padding: 0 16px;
+      gap: 16px;
+
+      & div {
+        width: 100%;
+      }
+    }
+  }
+
+
+
+
+  &__mobileSlideContainer {
+    display: flex;
+    // flex-direction: column;
+    margin-left: 300px;
+    width: calc(100% - 300px);
+
+    @include md-breakpoint {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  &__dots {
+    display: none;
+
+    @include md-breakpoint {
+      display: flex
+    }
+  }
+}

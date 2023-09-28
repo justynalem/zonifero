@@ -1,0 +1,219 @@
+@import "./variables.scss";
+@import "./mixins";
+@import "./header.scss";
+@import "./hero.scss";
+@import "./features.scss";
+@import "./specs.scss";
+@import "./shop.scss";
+@import "./faq.scss";
+@import "./contact.scss";
+@import "./products.scss";
+@import "./footer.scss";
+@import "./typography.scss";
+@import "./accordion.scss";
+@import "./dropdown.scss";
+@import "./hamburger.scss";
+@import "./flex.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.plain {
+  background-color: #fff;
+}
+
+.blue {
+  background-color: $product-color;
+}
+
+.grey {
+  background-color: $background-color;
+}
+
+.box1 {
+  width: 20%;
+}
+
+.box2 {
+  width: 30%;
+}
+
+.box3 {
+  width: 50%
+}
+
+.box4 {
+  width: 60%
+}
+
+.paddingR20 {
+  padding-right: 20%;
+}
+
+.paddingR15 {
+  padding-right: 15%;
+}
+
+.paddingR10 {
+  padding-right: 10%;
+}
+
+.width75 {
+  width: 75%;
+}
+
+.width70 {
+  width: 70%;
+}
+
+.white {
+  color: #fff;
+}
+
+.pt0 {
+  padding-top: 0px;
+}
+
+.pt90 {
+  padding-top: 90px;
+}
+
+.ptb90 {
+  padding: 90px 0;
+}
+
+.pb0 {
+  padding-bottom: 0px;
+}
+
+.margin0 {
+  margin: 0
+}
+
+.marginTB5 {
+  margin: 5px 0;
+}
+
+.marginT0 {
+  margin-top: 0px;
+}
+
+.marginT30 {
+  margin-top: 30px;
+}
+
+.marginB90 {
+  margin-bottom: 90px;
+}
+
+.gap120 {
+  gap: 120px
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+
+
+  &__partialBox {
+    width: 50%;
+    height: 54px;
+    text-align: center;
+    vertical-align: middle;
+
+    &--black {
+      background-color: $text-color;
+    }
+  }
+
+  &__partialBoxImg {
+    width: 50%;
+    background-image: url("../assets/Layer_504.png");
+    padding: 0 16px;
+  }
+
+  &__btn {
+    background-color: $product-color;
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px 16px;
+    width: 35%;
+    border: none;
+
+    &--form {
+      width: 15%;
+    }
+
+  }
+
+}
+
+.blackBackground {
+  background-color: $text-color;
+  padding: 8px 0;
+  width: 50%;
+  text-align: center;
+}
+
+.textCenter {
+  @include md-breakpoint {
+    text-align: center;
+  }
+}
+
+.width50mob {
+  @include md-breakpoint {
+    width: 50%;
+  }
+}
+
+.width75mob {
+  @include md-breakpoint {
+    width: 75%;
+  }
+}
+
+.width90mob {
+  @include md-breakpoint {
+    width: 90%;
+  }
+}
+
+.mobileHide {
+  @include md-breakpoint {
+    display: none;
+  }
+}
+
+
+
+.desktopHide {
+  display: none;
+}
+
+.mobileShow {
+  @include md-breakpoint {
+    display: block;
+  }
+}
+
+.glider-dot {
+  background-color: $text-color;
+  width: 5px;
+  height: 5px;
+}
+
+.glider-dot.active {
+  background-color: $product-color
+}

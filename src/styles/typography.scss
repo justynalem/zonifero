@@ -1,0 +1,146 @@
+.link {
+  font-family: $p-fontFamily;
+  font-size: 17px;
+
+  &--big {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &--small {
+    font-size: 12px;
+  }
+
+  &--thin {
+    font-weight: 100;
+  }
+
+  &--access {
+    font-weight: 400;
+  }
+
+  &--noWrap {
+    white-space: nowrap;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+
+}
+
+.headline {
+  font-family: $bigHeadline-fontFamily;
+  font-size: $bigHeadline-fontSize;
+  font-weight: $bigHeadline-fontWeight;
+  line-height: $bigHeadline-lineHeight;
+  color: $product-color;
+
+  @include md-breakpoint {
+    font-size: 32px;
+    line-height: unset;
+  }
+
+  &--black {
+    color: $text-color;
+  }
+
+  &--blue {
+    color: $product-color;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--middleSize {
+    font-size: 50px;
+  }
+
+  &--smallLineHeight {
+    line-height: 50px;
+  }
+}
+
+.description {
+  font-family: $description-fontFamily;
+  font-size: $description-fontSize;
+  line-height: $description-lineHeight;
+  font-weight: $description-fontWeight;
+  color: $text-color;
+
+  @include md-breakpoint {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--smallSize {
+    font-size: $p-fontSize;
+    line-height: $p-lineHeight;
+    text-align: justify;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--thin {
+    font-weight: $p-fontWeight;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--noLineHeight {
+    line-height: 0px;
+  }
+}
+
+.headers {
+  font-family: $h2-fontFamily;
+  font-size: $h2-fontSize;
+  line-height: $h2-lineHeight;
+  font-weight: $h2-fontWeight;
+  color: $text-color;
+
+  &--smallSize {
+    font-size: $h3-fontSize;
+    line-height: $h3-lineHeight;
+  }
+
+  &--white {
+    color: #fff;
+  }
+}
+
+.sectionHeader {
+  font-family: $h4-fontFamily;
+  font-size: $h4-fontSize;
+  font-weight: 600;
+  color: $text-color;
+}
+
+.btnText {
+  font-family: $p-fontFamily;
+  font-size: $p-fontSize;
+  font-weight: $description-fontWeight;
+  color: #fff;
+}
+
+.input {
+  font-size: $input-fontSize;
+  font-family: $input-fontFamily;
+  font-weight: $input-fontWeight;
+
+  &--label {
+    font-size: $inputSmall-fontSize;
+    font-weight: $input-fontWeight;
+  }
+
+}
