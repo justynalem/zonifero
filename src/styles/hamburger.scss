@@ -2,7 +2,6 @@
   display: block;
   position: relative;
   z-index: 1;
-
   -webkit-user-select: none;
   user-select: none;
 }
@@ -25,10 +24,9 @@
   position: absolute;
   top: -7px;
   left: -5px;
-  cursor: pointer;
   opacity: 0;
   z-index: 2;
-  -webkit-touch-callout: none;
+  // -webkit-touch-callout: none;
 }
 
 #menuToggle span {
@@ -72,15 +70,17 @@
 #menu {
   position: absolute;
   width: 100vw;
-  margin: 0 0 0 50px;
-  padding-top: 16px;
+  margin: 10px 0 0 -80vw;
+  padding: 50px;
+  // padding-top: 125px;
   background: #fff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
+
 
 #menu li {
   padding: 10px 0;

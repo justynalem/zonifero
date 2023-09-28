@@ -71,6 +71,9 @@
     height: 60px;
     text-align: center;
     vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include md-breakpoint {
       width: 40%;
@@ -97,8 +100,11 @@
 
   &__appleBadge {
     width: 80%;
-    transform: translateY(-8.5px);
     margin: 19px auto;
+
+    @include md-breakpoint {
+      width: 100%;
+    }
   }
 
 
